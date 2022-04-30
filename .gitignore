@@ -26,3 +26,5 @@ lol_stats_app/yarn-error.log*
 lol_stats/db.sqlite3
 
 .idea/
+
+lol_stats/*/migrations/

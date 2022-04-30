@@ -5,6 +5,7 @@
 lol_stats_app/node_modules
 lol_stats_app/.pnp
 lol_stats_app/pnp.js
+lol_stats_app/package-lock.json
 
 # testing
 lol_stats_app/coverage

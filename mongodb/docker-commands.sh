@@ -1,0 +1,1 @@
+mongoimport -u lol_stats -p lol_stats_pass --authenticationDatabase admin --db lol_stats --collection champions_base_stats --type csv --headerline --file /opt/data/normalized_stats_table.csv

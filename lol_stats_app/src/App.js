@@ -18,43 +18,43 @@ const users = [user, user2]
 
 // View
 function App() {
-        return (<div>
-                <h1> Examples from tutorial</h1>
-                <h3>User</h3>
-                {users.map(user => {
-                        return <Welcome user={user} key={user.firstName}/>
-                })}
-                <hr/>
-                <h3>Clock states</h3>
-                <Clock/>
-                <hr/>
-                <h3>Toggle component actions</h3>
-                <Toggle/>
-                <hr/>
-                <h3>Login Control conditional component</h3>
-                <LoginControl/>
-                <hr/>
-                <h3>Show and hide a component</h3>
-                <Page/>
-                <hr/>
-                <h3>Form</h3>
-                <Form/>
-                <hr/>
-                <h3>Form custom based on fields props</h3>
-                <FormCustom fields={[{"name": "Login", "value": ""}, {"name": "Password", "value": ""}]}/>
-                <hr/>
-                <h3> Text Area</h3>
-                <TextArea></TextArea>
-                <hr/>
-                <h3>Select with only one option</h3>
-                <SelectTheFruit></SelectTheFruit>
-                <hr/>
-                <h3>Select with multiple options</h3>
-                <SelectMutipleFruits></SelectMutipleFruits>
-                <hr/>
-                <h3>Reservation tutorial</h3>
-                <Reservation></Reservation>
-        </div>);
+    return (<div>
+        <h1> Examples from tutorial</h1>
+        <h3>User</h3>
+        {users.map(user => {
+            return <Welcome user={user} key={user.firstName}/>
+        })}
+        <hr/>
+        <h3>Clock states</h3>
+        <Clock/>
+        <hr/>
+        <h3>Toggle component actions</h3>
+        <Toggle/>
+        <hr/>
+        <h3>Login Control conditional component</h3>
+        <LoginControl/>
+        <hr/>
+        <h3>Show and hide a component</h3>
+        <Page/>
+        <hr/>
+        <h3>Form</h3>
+        <Form/>
+        <hr/>
+        <h3>Form custom based on fields props</h3>
+        <FormCustom fields={[{"name": "Login", "value": ""}, {"name": "Password", "value": ""}]}/>
+        <hr/>
+        <h3> Text Area</h3>
+        <TextArea></TextArea>
+        <hr/>
+        <h3>Select with only one option</h3>
+        <SelectTheFruit></SelectTheFruit>
+        <hr/>
+        <h3>Select with multiple options</h3>
+        <SelectMutipleFruits></SelectMutipleFruits>
+        <hr/>
+        <h3>Reservation tutorial</h3>
+        <Reservation></Reservation>
+    </div>);
 }
 
 export default App;

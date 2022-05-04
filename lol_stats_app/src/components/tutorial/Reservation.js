@@ -15,7 +15,13 @@ class Reservation extends React.Component {
     }
 
     handleSubmit(event) {
-        alert("You are" + this.state.isGoing ? "" : " not " + "going with " + this.state.numberOfGuests)
+        var text = ""
+        if (this.state.isGoing) {
+            text = "You are going! With " + this.state.numberOfGuests + " guests!"
+        } else {
+            text = "You are not going! =/"
+        }
+        alert(text)
         event.preventDefault()
     }
 
@@ -27,6 +33,9 @@ class Reservation extends React.Component {
                 <br/>
                 <label>How many guests:</label>
                 <input name="numberOfGuests" type="number" value={this.state.numberOfGuests} onChange={this.handleInputChange}/>
+                <br/>
+                <input type="submit" value="Submit"/>
+
             </form>
         );
     }

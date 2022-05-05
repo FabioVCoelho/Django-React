@@ -10,6 +10,7 @@ import TextArea from "./components/tutorial/TextArea";
 import SelectTheFruit from "./components/tutorial/SelectTheFruit";
 import SelectMutipleFruits from "./components/tutorial/SelectMutipleFruits";
 import Reservation from "./components/tutorial/Reservation";
+import CalculatorBoiling from "./components/tutorial/CalculatorBoiling";
 
 // Data
 const user = {firstName: "João", lastName: "Alvez"}
@@ -54,6 +55,12 @@ function App() {
         <hr/>
         <h3>Reservation tutorial</h3>
         <Reservation></Reservation>
+        <hr/>
+        <h2>Lifting State Up</h2>
+        <h3>Boiling Calculator</h3>
+        <CalculatorBoiling></CalculatorBoiling>
+        <h2>Composition vs Inheritance</h2>
+        <h3>Containment</h3>
     </div>);
 }
 
